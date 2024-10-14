@@ -14,9 +14,10 @@ public class MainLayout extends AppLayout {
         // Navigation Links
         RouterLink customerViewLink = new RouterLink("Customers", CustomerView.class);
         RouterLink itemViewLink = new RouterLink("Items", ItemView.class);
+        RouterLink orderViewLink = new RouterLink("Orders", OrderView.class);
 
         // Add links to the side menu
-        sideMenu.add(customerViewLink, itemViewLink);
+        sideMenu.add(customerViewLink, itemViewLink, orderViewLink);
 
         // Add the side menu to the layout
         addToDrawer(sideMenu);
